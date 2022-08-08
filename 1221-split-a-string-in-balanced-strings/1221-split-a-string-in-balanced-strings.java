@@ -1,21 +1,21 @@
 class Solution {
     public int balancedStringSplit(String s) {
-        int lcount = 0, rcount = 0, balCount = 0;
+        int count = 0,balcount = 0;
         
         char arr[] = s.toCharArray();
         
-        for(int i =0; i<s.length(); i++){
+        for(int i = 0; i<s.length(); i++){
             if(arr[i] == 'L'){
-                lcount++;
+                count++;
             }
-            if(arr[i] == 'R'){
-                rcount++;
+            else{
+                count--;
             }
             
-            if(lcount == rcount){
-                balCount++;
+            if(count == 0){
+                balcount++;
             }
         }
-        return balCount;
+        return balcount;
     }
 }
