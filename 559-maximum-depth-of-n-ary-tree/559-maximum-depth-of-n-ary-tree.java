@@ -21,8 +21,9 @@ class Solution {
     public int maxDepth(Node root) {
         if(root == null) return 0;
         
-        int maxD = 0;
-        for(Node child : root.children){
+        int maxD = 0; // initializing max =0;
+        
+        for(Node child : root.children){ // traversing through each and evry children of root node
             maxD  = Math.max(maxD, maxDepth(child));
         }
         return maxD+1;
