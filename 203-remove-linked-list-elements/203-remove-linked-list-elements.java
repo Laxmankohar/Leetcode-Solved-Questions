@@ -14,9 +14,9 @@ class Solution {
             return head;
         }
         
-        ListNode nakli = new ListNode();
-        nakli.next = head;
-        ListNode curr = nakli;
+        ListNode nakliNode = new ListNode();
+        nakliNode.next = head;
+        ListNode curr = nakliNode;
         
         while(curr.next != null){
             if(curr.next.val == val){
@@ -26,6 +26,6 @@ class Solution {
                 curr = curr.next;
             }
         }
-        return nakli.next;
+        return nakliNode.next;
     }
 }
