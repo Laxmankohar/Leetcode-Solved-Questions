@@ -4,6 +4,8 @@ class Solution {
         
         Arrays.sort(nums);
         
+//         brute force approach
+        
         // for(int i = 0 ; i < nums.length; i++){
         //     if(nums[i] == target){
         //         list.add(i);
@@ -11,7 +13,7 @@ class Solution {
         // }
         // return list;
         
-        
+//        bineary search 
         
         int start = 0;
         int end = nums.length -1 ;
