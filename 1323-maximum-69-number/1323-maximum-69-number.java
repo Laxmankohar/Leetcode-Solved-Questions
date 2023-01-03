@@ -3,7 +3,7 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         
         sb.append(num);
-        for(int i = 0 ; i < sb.length() ; i++){
+        for(int i = 0 ; i < sb.length(); i++){
             if(sb.charAt(i) != '9'){
                 sb.setCharAt(i,'9');
                 break;
